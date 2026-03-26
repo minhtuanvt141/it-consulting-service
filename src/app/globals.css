@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-surface-dim: #101210;
+  --color-surface-container-low: #1a1c1a;
+  --color-on-error-container: #ffdad6;
+  --color-tertiary-fixed-dim: #efbc94;
+  --color-surface-container-highest: #333532;
+  --color-outline: #8b928b;
+  --color-error-container: #93000a;
+  --color-surface-tint: #e6d5bc;
+  --color-primary-fixed: #fdf5e6;
+  --color-secondary-fixed-dim: #d8ccbc;
+  --color-secondary-fixed: #e6d5bc;
+  --color-on-tertiary-fixed-variant: #623f20;
+  --color-secondary: #d8ccbc;
+  --color-surface-container-lowest: #0a0c0a;
+  --color-inverse-surface: #e4e2de;
+  --color-on-secondary-container: #cdc4b5;
+  --color-tertiary-fixed: #ffdcc2;
+  --color-on-primary-fixed: #1c1b18;
+  --color-inverse-on-surface: #2f312e;
+  --color-on-secondary-fixed: #1e1b18;
+  --color-surface-bright: #383a37;
+  --color-surface-container: #1e201e;
+  --color-on-surface-variant: #c4c8c0;
+  --color-surface-container-high: #282a27;
+  --color-on-tertiary: #48290c;
+  --color-on-primary-container: #1c1b18;
+  --color-tertiary: #ffeadb;
+  --color-on-tertiary-container: #775131;
+  --color-error: #ffb4ab;
+  --color-secondary-container: #4a4742;
+  --color-surface: #101210;
+  --color-tertiary-container: #fbc79e;
+  --color-background: #101210;
+  --color-on-secondary-fixed-variant: #4a4742;
+  --color-on-error: #690005;
+  --color-on-primary: #1c1b18;
+  --color-outline-variant: #434843;
+  --color-on-surface: #e4e2de;
+  --color-on-tertiary-fixed: #2e1500;
+  --color-inverse-primary: #e6d5bc;
+  --color-surface-variant: #333532;
+  --color-primary-container: #e6d5bc;
+  --color-on-background: #e4e2de;
+  --color-primary-fixed-dim: #d8ccbc;
+  --color-on-primary-fixed-variant: #fdf5e6;
+  --color-primary: #e6d5bc;
+  --color-on-secondary: #36302a;
+
+  --font-plus-jakarta: var(--font-plus-jakarta), "Plus Jakarta Sans", sans-serif;
+  --font-headline: var(--font-plus-jakarta), "Plus Jakarta Sans", sans-serif;
+  --font-body: var(--font-plus-jakarta), "Plus Jakarta Sans", sans-serif;
+  --font-label: var(--font-plus-jakarta), "Plus Jakarta Sans", sans-serif;
+
+  --radius-DEFAULT: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-on-surface);
+  }
+}
