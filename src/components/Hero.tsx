@@ -25,22 +25,6 @@ export default function Hero() {
           <p className="text-lg text-on-surface-variant max-w-xl leading-relaxed">
             Architecture, infrastructure, and security designed for the next generation of enterprise performance. Transforming complexity into competitive advantage.
           </p>
-          <div className="flex flex-wrap gap-4 pt-4">
-            <motion.button 
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-primary text-on-primary font-bold rounded-md hover:shadow-[0_0_30px_rgba(230,213,188,0.3)] transition-all cursor-pointer"
-            >
-              Initiate Strategy
-            </motion.button>
-            <motion.button 
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-transparent border border-outline-variant/30 text-on-surface font-bold rounded-md hover:bg-surface-container-high transition-all cursor-pointer"
-            >
-              View Case Studies
-            </motion.button>
-          </div>
         </motion.div>
         
         <motion.div 
@@ -54,16 +38,6 @@ export default function Hero() {
             <div className="relative w-full h-full rounded-2xl overflow-hidden border border-primary/10 bg-surface-container-low">
               <img alt="Technology illustration representing modern systems and digital architecture" className="w-full h-full object-cover grayscale opacity-80 transition-all duration-700 hover:grayscale-0 hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBm8q_XFfZ5T4dD5UCbQjoUCf6iE1_iyK6xm4pXSRjD15v6hEWmm2nP5_Kf9U66SqNxyazjvUitb8TpVZz8jX6jTxAOEImOpFpJDv5uvYYyiCiLZzWWJ4LHOXxAmdvoClbrfbMx7BW8dgtOv6ZsAsWS0UiOHcQ-Kt2KcIjNg7e_qlwTyIKDrcUZm15v8G6rETf1FrsvNlXvCtIqNqQjoRYq8ijFywWEWye7g6R30swBIQ3lV2tങ്ങളlV2tNb7Qgcg84Hl5cmEblRo0my0n6024"/>
             </div>
-            {/* Floating Insight Chip */}
-            <motion.div 
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.8, type: "spring" }}
-              className="absolute -bottom-6 -left-6 bg-surface-container-highest p-4 rounded-xl shadow-2xl border border-outline-variant/10 max-w-[180px]"
-            >
-              <p className="text-[10px] text-primary font-bold uppercase tracking-widest mb-1">Expertise</p>
-              <p className="text-sm font-semibold text-on-surface">Systems Architecture &amp; Scalable Cloud</p>
-            </motion.div>
           </div>
         </motion.div>
       </div>
