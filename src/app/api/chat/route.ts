@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
-const OPENROUTER_API_KEY = "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";
+const API_KEY = "sk-4bd27113b7dc78d1-lh6jld-f4f9c69f";
 
 export async function POST(req: Request) {
   try {
@@ -33,21 +33,21 @@ Yêu cầu BẮT BUỘC:
       ...messages
     ];
 
-    const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+    const response = await fetch("https://9router.vuhai.io.vn/v1/chat/completions", {
       method: "POST",
       headers: {
-        "Authorization": `Bearer ${OPENROUTER_API_KEY}`,
+        "Authorization": `Bearer ${API_KEY}`,
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        model: "z-ai/glm-4.5-air:free",
+        model: "ces-chatbot-gpt-5.4",
         messages: apiMessages,
       })
     });
 
     if (!response.ok) {
       const errorText = await response.text();
-      return NextResponse.json({ error: "Failed to fetch from OpenRouter: " + errorText }, { status: 500 });
+      return NextResponse.json({ error: "Failed to fetch from Custom API: " + errorText }, { status: 500 });
     }
 
     const data = await response.json();
