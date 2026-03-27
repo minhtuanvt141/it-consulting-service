@@ -23,7 +23,11 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              onClick={() => setActive(link.href)}
+              onClick={(e) => {
+                e.preventDefault();
+                setActive(link.href);
+                document.querySelector(link.href)?.scrollIntoView({ behavior: "smooth" });
+              }}
               className={`font-plus-jakarta font-bold tracking-tight transition-colors pb-1 ${
                 active === link.href
                   ? "text-primary border-b-2 border-primary"

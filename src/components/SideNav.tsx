@@ -23,7 +23,11 @@ export default function SideNav() {
             <a
               key={link.href}
               href={link.href}
-              onClick={() => setActive(link.href)}
+              onClick={(e) => {
+                e.preventDefault();
+                setActive(link.href);
+                document.querySelector(link.href)?.scrollIntoView({ behavior: "smooth" });
+              }}
               className={`px-4 py-2 rounded-lg transition-colors ${
                 active === link.href
                   ? "bg-primary/10 text-primary"
