@@ -66,3 +66,14 @@
     color: var(--color-on-surface);
   }
 }
+
+/* Chat Markdown Formatting */
+.chat-markdown p { line-height: 1.6; margin-bottom: 0.5rem; }
+.chat-markdown ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.chat-markdown ol { list-style-type: decimal; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+.chat-markdown li { margin-bottom: 0.25rem; }
+.chat-markdown strong { font-weight: bold; color: var(--color-primary); }
+.chat-markdown code { background-color: #2f312e; font-family: 'Fira Code', Consolas, monospace; padding: 0.2rem 0.4rem; border-radius: 0.25rem; font-size: 0.875em; }
+.chat-markdown pre { background-color: #2f312e; padding: 1rem; border-radius: 0.5rem; overflow-x: auto; margin-bottom: 0.5rem; }
+.chat-markdown pre code { background-color: transparent; padding: 0; }
+.chat-markdown blockquote { border-left: 4px solid var(--color-outline); padding-left: 1rem; color: var(--color-on-surface-variant); margin-bottom: 0.5rem; }
