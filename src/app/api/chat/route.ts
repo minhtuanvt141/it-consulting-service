@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
-const OPENROUTER_API_KEY = "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";
+const OPENROUTER_API_KEY = "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";
 
 export async function POST(req: Request) {
   try {
